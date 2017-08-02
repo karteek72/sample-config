@@ -30,7 +30,6 @@ eureka:
     preferIpAddress: false
   client:
     eurekaServerPort: 8671
-    useDnsForFetchingServiceUrls: true
     eurekaServerURLContext: eureka
     registerWithEureka: true
     fetchRegistry: true
