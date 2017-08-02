@@ -6,7 +6,6 @@ logging:
 server:
   port: 8671
 eureka:
-  environment: default
   instance:
     hostname: localhost
     preferIpAddress: false
