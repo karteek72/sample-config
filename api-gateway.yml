@@ -29,8 +29,13 @@ eureka:
   instance:
     preferIpAddress: false
   client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    eurekaServerPort: 8671
+    useDnsForFetchingServiceUrls: true
+    eurekaServerURLContext: eureka
+    registerWithEureka: true
+    fetchRegistry: true
+   # serviceUrl:
+   #   defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
 
 # Define settings for Single-Sign-On with OAuth2; this means that we need to relay the OAuth token
 # to the subsequent resources that are proxied by the Zuul api gateway.
