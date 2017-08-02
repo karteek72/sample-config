@@ -1,3 +1,10 @@
 mail:
   domain: gmail.com
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+    com:
+      demo: DEBUG
   
