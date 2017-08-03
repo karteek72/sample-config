@@ -4,7 +4,7 @@ logging:
   level:
     org:
       springframework:
-        security: DEBUG
+        security: ERROR
     com:
       demo: DEBUG
       netflix: DEBUG
@@ -19,5 +19,4 @@ endpoints:
 management:
   security:
     enabled: false
-
   
