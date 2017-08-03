@@ -17,9 +17,17 @@ authserver:
 # requests using zuul
 zuul:
   routes:
-    user-webservice: /api/user/**
-    task-webservice: /api/task/**
-    web-portal: /**
+    user-webservice:
+      path: /api/user/**
+      serviceId: user-webservice
+      stripPrefix: true
+    task-webservice:
+      path: /api/task/**
+      serviceId: task-webservice
+      stripPrefix: false
+    web-portal:
+      path: /**
+      serviceId: web-portal
     user:
       path: /api/loggedinuser/**
       stripPrefix: true
