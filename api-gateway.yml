@@ -33,6 +33,7 @@ zuul:
       path: /api/loggedinuser/**
       serviceId: auth-server
       stripPrefix: true
+    add-proxy-headers: true
       #url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}
 # Define the Eureka server that handles service registration
 eureka:
@@ -54,7 +55,9 @@ eureka:
 
 # Remaining properties are used by the OAuth2 SSO to determine where the authorization server is and
 # what client crendentials to use to access that server.
-spring:
+security:
+  basic:
+    enabled: false
   oauth2:
     sso:
       home:
