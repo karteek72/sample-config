@@ -33,7 +33,6 @@ zuul:
       path: /api/loggedinuser/**
       serviceId: auth-server
       stripPrefix: true
-    add-proxy-headers: true
       #url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}
 # Define the Eureka server that handles service registration
 eureka:
