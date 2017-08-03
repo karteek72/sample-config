@@ -26,7 +26,7 @@ zuul:
       serviceId: task-webservice
       stripPrefix: false
     web-portal:
-      path: /**
+      path: /web/**
       serviceId: web-portal
       stripPrefix: false
     user:
