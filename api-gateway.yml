@@ -1,7 +1,6 @@
 # Define the port where the API gateway server would be running
 server:
   port: 8765
-  contextPath:
 
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:
@@ -77,6 +76,6 @@ spring:
         register-health-check: true
         register: true
         fail-fast: false
-        health-check-path: ${server.contextPath}/health
+        health-check-path: /health
       config:
         enabled: true

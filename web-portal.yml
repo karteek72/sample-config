@@ -1,6 +1,6 @@
 server:
   port: 8090
-  
+  contextPath:
 eureka:
   client:
     serviceUrl:
@@ -13,6 +13,6 @@ spring:
         register-health-check: true
         register: true
         fail-fast: false
-        health-check-path: ${server.context-path}/health
+        health-check-path: /health
       config:
         enabled: true

@@ -20,7 +20,7 @@ spring:
         register-health-check: true
         register: true
         fail-fast: false
-        health-check-path: ${server.context-path}/health
+        health-check-path: ${server.contextPath}/health
       config:
         enabled: true
   datasource:
