@@ -69,3 +69,13 @@ spring:
         url: jdbc:mysql://localhost:3306/oauth2
         username: root
         driver-class: com.mysql.jdbc.Driver
+  cloud:
+    consul:
+      discovery:
+        enabled: true
+        register-health-check: true
+        register: true
+        fail-fast: false
+        health-check-path: ${server.context-path}/health
+      config:
+        enabled: true

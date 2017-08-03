@@ -7,4 +7,6 @@ logging:
         security: DEBUG
     com:
       demo: DEBUG
+      netflix: DEBUG
+
   
