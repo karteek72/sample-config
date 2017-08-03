@@ -32,7 +32,6 @@ zuul:
     user:
       path: /api/loggedinuser/**
       stripPrefix: true
-      serviceId: web-portal
       url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}
 # Define the Eureka server that handles service registration
 eureka:
