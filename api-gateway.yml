@@ -77,6 +77,6 @@ spring:
         register-health-check: true
         register: true
         fail-fast: false
-        health-check-path: /${server.contextPath}/health
+        health-check-path: ${server.contextPath}/health
       config:
         enabled: true
