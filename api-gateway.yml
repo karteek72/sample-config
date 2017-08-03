@@ -69,7 +69,7 @@ spring:
 # a physical endpoint (defined using userInfoUri) OR can be bypassed if you use a JSON web token (JWT) that stores
 # information about grants and authentication in the token itself.
 
-# Note that the "/user" endpoint needs to provide the principle of the logged in user (/me endpoint)
+# Note that the "/me" endpoint needs to provide the principle of the logged in user (/me endpoint)
     resource:
       userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
   datasource:
