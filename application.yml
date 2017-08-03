@@ -8,5 +8,16 @@ logging:
     com:
       demo: DEBUG
       netflix: DEBUG
+endpoints:
+  actuator:
+    enabled: true
+  health:
+    enabled: true
+    sensitive: false
+  info:
+    enabled: true
+management:
+  security:
+    enabled: false
 
   

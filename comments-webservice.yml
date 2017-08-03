@@ -14,6 +14,16 @@ authserver:
 
 # Note that the "/user" endpoint needs to provide the principle of the logged in user (/me endpoint)
 spring:
+  cloud:
+    consul:
+      discovery:
+        enabled: true
+        register-health-check: true
+        register: true
+        fail-fast: false
+        health-check-path: ${server.context-path}/health
+      config:
+        enabled: true
   oauth2:
     resource: 
       userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me

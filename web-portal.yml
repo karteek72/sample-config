@@ -5,3 +5,14 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+spring:
+  cloud:
+    consul:
+      discovery:
+        enabled: true
+        register-health-check: true
+        register: true
+        fail-fast: false
+        health-check-path: ${server.context-path}/health
+      config:
+        enabled: true
