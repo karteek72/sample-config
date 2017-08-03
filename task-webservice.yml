@@ -24,6 +24,11 @@ spring:
         health-check-path: /health
       config:
         enabled: true
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: tasks
 security:
   oauth2:
     resource: 
@@ -32,8 +37,3 @@ security:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
       clientId: acme
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      database: tasks
