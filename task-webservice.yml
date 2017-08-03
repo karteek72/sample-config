@@ -29,7 +29,6 @@ spring:
       host: localhost
       port: 27017
       database: tasks
-#security:
   oauth2:
     resource: 
       userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
