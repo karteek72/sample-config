@@ -24,6 +24,7 @@ spring:
         health-check-path: /health
       config:
         enabled: true
+security:
   oauth2:
     resource: 
       userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
