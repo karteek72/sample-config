@@ -24,15 +24,16 @@ zuul:
     task-webservice:
       path: /api/task/**
       serviceId: task-webservice
-      stripPrefix: false
+      stripPrefix: true
     web-portal:
       path: /**
       serviceId: web-portal
       stripPrefix: false
-    user:
+    auth-server:
       path: /api/loggedinuser/**
+      serviceId: auth-server
       stripPrefix: true
-      url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}
+      #url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}
 # Define the Eureka server that handles service registration
 eureka:
   instance:
