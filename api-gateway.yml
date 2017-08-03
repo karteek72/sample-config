@@ -74,7 +74,7 @@ security:
 # Note that the "/me" endpoint needs to provide the principle of the logged in user (/me endpoint)
     resource:
       userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
-  spring:
+spring:
   datasource:
     url:
       datasource:
