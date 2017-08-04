@@ -32,8 +32,3 @@ spring:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
       clientId: acme
-  data:
-    mongodb:
-    host: localhost
-    port: 27017
-    database: users
