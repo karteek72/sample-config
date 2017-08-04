@@ -5,6 +5,7 @@ logging:
     org:
       springframework:
         security: ERROR
+        data: debug
     com:
       demo: DEBUG
       netflix:
